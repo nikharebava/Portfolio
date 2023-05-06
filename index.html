@@ -5,16 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e8cffd68db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Sigmar&family=Vina+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <!-- <div class="container"> -->
+            <div class="header">
+                <i id="bari" class="fa-solid fa-bars-staggered"></i>
+                <nav id="navi">
+                    <ul>
+                        <li><a class="nava" href="#home">HOME</a></li>
+                        <li><a class="nava" href="#about">ABOUTME</a></li>
+                        <li><a class="nava" href="#portfolio">PROJECTS</a></li>
+                        <li><a class="nava" href="#skills">SKILLS</a></li>
+                        <li><a class="nava" href="#contant">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        <!-- </div> -->
+    </header>
     <section id="home">
         <div class="container">
             <div class="background1">
                 <div class="background"></div>
-                <div id="text" class="bgtext">
+                <div class="bgtext">
                     <p>Hello I'm</p>
                     <h1>Nino Kharebava</h1>
                 </div>
@@ -26,7 +48,7 @@
             <h2>About Me</h2>
             <div class="about">
                     <p class="abtext">
-                        I am Nino, 26 years old. It's been 1 year since I discovered programming and decided that this is exactly what I want to do for the rest of my life. At this stage, of course, I can't call myself a programmer, but during this 1 year I managed to do a lot and I'm not going to stop. Now my main goal is to get education and experience                    </p>
+                        I am Nino, 25 years old. It's been 1 year since I discovered programming and decided that this is exactly what I want to do for the rest of my life. At this stage, of course, I can't call myself a programmer, but during this 1 year I have managed to do a lot and I'm not going to stop. Now my main goal is to get education and experience                    </p>
                     <div class="img">
                     </div>
                     <div class="info">
@@ -41,7 +63,7 @@
             </div>
         </div>
     </section>
-    <section id="portfolio">
+   <!--  <section id="portfolio">
         <div class="container">
             <div class="portfolio">
                 <h2>portfolio</h2>
@@ -142,6 +164,27 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2506.7650373725623!2d16.9984101!3d51.0758873!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc2349b64d079%3A0x27d7e28371240262!2zU8WCb3RuYSA1LCA1My0wMjIgV3JvY8WCYXc!5e0!3m2!1ska!2spl!4v1683300058846!5m2!1ska!2spl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>            
                 </div>
         </div>
-    </section>
+    </section> --->
+    <script>
+        // nav bar.................
+        const navi = document.getElementById('navi')
+        const bari = document.getElementById('bari')
+        const nava = Array.from(document.getElementsByClassName('nava'))
+        bari.addEventListener('click',()=>{
+            navi.classList.toggle('hidden')
+            if(navi.classList.contains('hidden')){
+                bari.classList.add('deg')
+                
+            }
+            else{
+                bari.classList.remove('deg') 
+                }
+        })
+        nava.forEach(element =>{
+            element.addEventListener('click', ()=>{
+                navi.classList.add('hidden')
+            })
+        })
+    </script>
 </body>
 </html>
