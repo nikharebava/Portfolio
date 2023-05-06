@@ -1,0 +1,453 @@
+@media(min-width:320px){
+    body{
+        height: 100%;
+    }
+    .hidden{
+        display: none;
+    }
+    #navi{
+        z-index: 100;
+        background-color: #ace0f9;
+        width: 100%;
+        height: 100vh;
+    }
+    .container{
+        width: 98%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .fa-jet-fighter-up{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 111;
+        font-size: 60px;
+        cursor: pointer;
+        -webkit-transition: all 0.7s;
+        -o-transition: all 0.7s;
+        transition: all 0.7s;
+        color: black;
+        font-weight: bold;
+    }
+    .fa-jet-fighter-up:hover{
+        -webkit-transform: scaleY(2);
+            -ms-transform: scaleY(2);
+                transform: scaleY(2);
+    }
+
+    .header{
+        position: relative;
+        width: 100%;
+    }
+    .header nav{
+        height: 100vh;
+        
+    }
+    .fa-bars{
+        position: absolute;
+        font-size: 40px;
+        cursor: pointer;
+        -webkit-transition: all 0.7s;
+        -o-transition: all 0.7s;
+        transition: all 0.7s;
+        color: palevioletred;
+        font-weight: bold;
+        text-shadow: 5px 2px indigo;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        z-index: 20;
+        
+    }
+    #x{
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 40px;
+        color: palevioletred;
+        font-weight: bold;
+    }
+    .fa-bars:hover{
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+    .header ul{
+        height: 50vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        text-align: left;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
+    }
+    .header ul a{
+        color: palevioletred;
+        font-size: 30px;
+        font-weight: bold;
+        text-shadow: 2px 3px indigo;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .header ul a:hover{
+        border-bottom: 2px solid palevioletred;
+        font-style: italic;
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+    /* .........................section1............... */
+    
+    .background1{
+        width: 100%;
+        height: 100vh;
+        background: -o-radial-gradient(10% 20%, circle, rgb(246, 133, 133) 16.3%, rgb(172, 131, 241) 90%);
+        background: radial-gradient(circle at 10% 20%, rgb(246, 133, 133) 16.3%, rgb(172, 131, 241) 90%);
+        position: relative;
+    }
+    .background{
+        position: absolute;
+        background-image: url(../images/aafdad.jpg);
+        height: 100vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5;
+        border-radius: 0 40% 70% 0%;
+    }
+    .bgtext{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        color:white;
+        text-shadow: 1px 1px indigo;
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute;
+        border-radius: 100% 0 0 40%;
+        width: 60%;
+        height: 60vh;
+        background: -o-radial-gradient(10% 20%, circle, rgb(246, 133, 133) 16.3%, rgb(172, 131, 241) 90%);
+        background: radial-gradient(circle at 10% 20%, rgb(246, 133, 133) 16.3%, rgb(172, 131, 241) 90%);
+        padding: 10px;
+        text-align: end;
+        bottom: 0;
+        right: 0;
+    }
+    h2{
+        font-size: 55px;
+        font-weight: bold;
+        color: palevioletred;
+        text-shadow: 2px 2px indigo;
+        text-align: center;
+    }
+    /* ...............................about320.................. */
+    #about .container{
+        height: 100vh;
+        background: -webkit-gradient(linear, left bottom, left top, from(#fff1eb), to(#ace0f9));
+        background: -o-linear-gradient(bottom, #fff1eb 0%, #ace0f9 100%);
+        background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    }
+    .about{
+        position:relative;
+        width: 100%;
+    }
+    .abtext{
+        position: absolute;
+    }
+    .img{
+        background-image: url(../images/2.jpg);
+        height: 90vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 0 40% 70% 0%;
+    }
+    .abtext{
+        background-color: palevioletred;
+        padding: 20px;
+        border-radius: 0 40% 70% 0%;
+        color: lightblue;
+        line-height: 140%;
+        padding: 10px;
+    }
+    .info{
+        position: absolute;
+        bottom: 0;
+        background-color: palevioletred;
+        width: 100%;
+        border-radius: 70% 0% 0 40%;
+        padding: 50px;
+        color: lightblue;
+        
+    }
+    .about li{
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+    }
+    /* projects..............................320 */
+    #portfolio .container{
+        background: -o-radial-gradient(10% 20%, circle, rgb(222, 168, 248) 0%, rgb(168, 222, 248) 21.8%, rgb(189, 250, 205) 35.6%, rgb(243, 250, 189) 52.9%, rgb(250, 227, 189) 66.8%, rgb(248, 172, 172) 90%, rgb(254, 211, 252) 99.7%);
+        background: radial-gradient(circle at 10% 20%, rgb(222, 168, 248) 0%, rgb(168, 222, 248) 21.8%, rgb(189, 250, 205) 35.6%, rgb(243, 250, 189) 52.9%, rgb(250, 227, 189) 66.8%, rgb(248, 172, 172) 90%, rgb(254, 211, 252) 99.7%);
+        height: 100vh;
+        position: relative;
+    }
+    .div{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        -webkit-transition: all 0.7s;
+        -o-transition: all 0.7s;
+        transition: all 0.7s;
+    }
+    .div img{
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: center;
+           object-position: center;
+        
+    }
+    .absolute {
+        position: absolute;
+    }
+
+    .div:hover{
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+        z-index: 5;
+    }
+    .div1{
+        top: 10vh;
+        left: 0;
+    }
+    .div2{
+        top: 20vh;
+        right: 0;
+    }
+    .div3{
+        bottom: 10vh;
+        left: 0;
+    }
+    .div4{
+        bottom: 0;
+        right: 0;
+    }
+    .absolute{
+        height: 60px;
+        width: 100%;
+        background-color:palevioletred;
+        bottom: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 0 10px;
+        font-size: 19px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-weight: bold;
+        color: lightblue;
+    }
+    /* ..............................skills 320......................... */
+    #skills .container{
+        height: 100vh;
+        background: -o-linear-gradient(315deg, rgb(255, 168, 168) 10%, rgb(252, 255, 0) 100%);
+        background: linear-gradient(135deg, rgb(255, 168, 168) 10%, rgb(252, 255, 0) 100%);
+    }
+    .justify{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-size: 25px;
+        font-weight: bold;
+        color: lightseagreen;
+        text-shadow: 1px 1px black;
+    }
+    .skillsdiv{
+        margin-top: 30vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        row-gap: 20px;
+    }
+    .line{
+        height: 20px;
+        background-color: palevioletred;
+    }
+    .css .line {
+        width: 80%;
+    }
+    .html .line {
+        width: 90%;
+    }
+    .scss .line {
+        width: 70%;
+    }
+    .javascript .line{
+        width: 65%;
+    }
+    /* ................................contact..................... */
+    #contact .container{
+        height: 100vh;
+        background: -webkit-gradient(linear, left bottom, left top, from(#d299c2), to(#fef9d7));
+        background: -o-linear-gradient(bottom, #d299c2 0%, #fef9d7 100%);
+        background: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    .map{
+        width: 100%;
+    }
+    .socials{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        font-size: 30px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        background-color: lightseagreen;
+        border: 5px dotted palevioletred;
+    }
+    .socials a{
+        color: palevioletred;
+        text-shadow: 1px 1px black;
+        -webkit-transition: all 0.7s;
+        -o-transition: all 0.7s;
+        transition: all 0.7s;
+    }
+    .socials a:hover{
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+    iframe{
+        width: 100%;
+    }
+    .contactinfo h4{
+        color: palevioletred;
+        text-shadow: 1px 1px black;
+        font-size: 25px;
+    }
+    .contactinfo p a{
+        color: lightseagreen;
+        text-shadow: 1px 1px black;
+    }
+}  
+@media(min-width:700px){
+/* ........................................about700.....................*/
+.abtext{
+    border-radius:  70% 0% 0 40%;
+    padding: 50px;
+    text-align: end;
+    width: 50%;
+    right: 0;
+}
+.info{
+    border-radius:0 40% 70% 0% ;
+    width: 100%;
+    left: 0;
+}
+/* .....................projects.............. */
+.div{
+    width: 300px;
+    height: 300px;
+}
+}
+@media(min-width:1000px){
+    
+     .background{
+        width: 70%;
+     }
+     .bgtext{
+        width: 50%;
+        height: 70vh;
+        font-size: 60px;
+}
+/* .........................about1000............... */
+
+.img{
+    background-position: 90% 38%;
+}
+/* ..................projects 1000 ............ */
+.div{
+    width: 250px;
+    height: 250px;
+}
+.div1{
+    top: 2vh;
+    left:0;
+}
+.div2{
+    top: 2vh;
+    right: 0;
+}
+.div3{
+    bottom: 0;
+    left: 0;
+}
+.div4{
+    bottom: 0;
+    right: 0;
+}
+/* ...............contactinfo..................... */
+.contactinfo{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    
+}
+
+}
