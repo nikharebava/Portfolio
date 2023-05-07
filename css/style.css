@@ -168,6 +168,26 @@
  .info:hover, .abtext:hover{
     opacity: 1;
  }
+
+/* ...............................projects.......................... */
+.div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+.div img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid palevioletred;
+}
+.portfolio-imgs{
+    display: flex;
+    
+}
+
+
+}
  @media(min-width:700px){
       .header ul{
         height: 10vh;
@@ -190,4 +210,58 @@
         align-items: center;
         
     }
+    /* ...........................................about700................... */
+    .abtext{
+        height: 20vh;
+        display: flex;
+        align-items: center;
+    }}
+    @media(min-width:1000px){
+        .background{
+            width: 70%;
+        }
+        .bgtext {
+            width: 50%;
+            height: 70vh;
+            font-size: 60px;
+        }
+        /* .................about............ */
+        .abtext{
+            height: 30vh;
+            display: flex;
+            align-items: center;
+        }
+        .img{
+            width: 65%;
+            height: 90vh;
+            position: absolute;
+            left: 0;
+        }
+        .abtext{
+            width: 70%;
+            height: 90vh;
+            right: 0;
+            border-radius:70% 0% 0 40% ;
+            z-index: 5;
+            text-align: right;
+            padding-left: 20%;
+            opacity: 0.8;
+            line-height: 130%;
+            letter-spacing: 3px;
+        }
+        .abtext:hover{
+            border: 5px solid palevioletred;
+            z-index: 5;
+        }
+
+        .info{
+            text-align: left;
+            bottom: 0;
+            left:0;
+            border-radius: 0 40% 70% 0%;
+        }
+        .info:hover{
+                border: 5px solid palevioletred;
+                z-index: 5;
+        }
  }
